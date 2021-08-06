@@ -1,10 +1,15 @@
 #include <iostream>
 
-using namespace std;
+int getResponse()
+{
+    int val{0};
+    std::cout << "Please enter a value!\n";
+    std::cin >> val; 
+    return val;
+}
 
 int main(int argc, char const *argv[])
 {
-    /* code */
-    cout << "hello! \n";
+    std::cout << getResponse();
     return 0;
 }
